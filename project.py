@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import random
 def gamewin(comp,you):
  if comp==you:
@@ -43,3 +44,32 @@ else:
     print("you lose")
 print(f"computer turn {comp}")
 print(f"your turn {you}")
+=======
+
+import random
+from xml.etree.ElementPath import prepare_predicate
+randint=random.randint(1,100)
+guesses=0
+num=None
+
+while(num!=randint):
+    guesses=guesses+1
+    num=int(input())
+    if(num==randint):
+        print("You guess is correctly")
+    else:
+        if(num<randint):
+         print("You guess is incorrect.number is greater")
+        else:
+            print("You guess is incorrect.number is smaller")
+
+print(f"Your number of guesses are{guesses}")
+with open ("hiscore.txt",'r') as f:
+      hiscore=int(f.read())
+
+if guesses<hiscore:
+    print("You have just broken the hiscore")
+    with open ("hiscore.txt",'w') as f:
+        f.write(str(guesses))
+    
+>>>>>>> 6d08218 (game to predict the number)
