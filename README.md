@@ -17,7 +17,7 @@
 - Clone on your local machine
 
 ```
-git clone https://github.com/akashprap/Birthday_Greeter
+git clone https://github.com/Itsdevashishgupta/Python.git
 
 ```
 - Navigate to project directory.
